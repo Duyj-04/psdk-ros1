@@ -1,0 +1,5 @@
+<launch>
+  <arg name="config" default="$(find psdk_ros1)/config/psdk_ros1.yaml"/>
+  <rosparam file="$(arg config)" command="load"/>
+  <node pkg="psdk_ros1" type="psdk_ros1_node" name="psdk_ros1_node" output="screen"/>
+</launch>

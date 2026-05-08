@@ -1,0 +1,5 @@
+#request
+bool obstacle_avoidance_on      # True: obstacle avoidance on, False, obstacle avoidance off
+---
+#response
+bool success

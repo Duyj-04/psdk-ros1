@@ -1,0 +1,15 @@
+std_msgs/Header header
+uint8 HORIZONTAL_VELOCITY=0
+uint8 HORIZONTAL_POSITION=1
+uint8 HORIZONTAL_ANGLE=2
+uint8 VERTICAL_VELOCITY=0
+uint8 VERTICAL_POSITION=1
+uint8 YAW_RATE=0
+uint8 YAW_ANGLE=1
+uint8 FRAME_BODY=0
+uint8 FRAME_GROUND=1
+uint8 horizontal_mode
+uint8 vertical_mode
+uint8 yaw_mode
+uint8 frame
+bool stable_mode

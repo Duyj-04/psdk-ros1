@@ -1,0 +1,53 @@
+psdk_visual_target_tracker_node:
+  payload_index: 1
+
+  wide_detection_topic: "/detector/h20_wide/detections"
+  zoom_detection_topic: "/detector/h20_zoom/detections"
+  target_classes: []
+
+  control_rate: 30.0
+  assist_mode: "yaw_only" # disabled, yaw_only, yaw_xy
+
+  wide_image_width: 1920
+  wide_image_height: 1080
+  zoom_image_width: 1920
+  zoom_image_height: 1080
+  wide_deadzone: 0.03
+  zoom_deadzone: 0.015
+  detector_latency_s: 0.08
+  detection_timeout_s: 0.25
+  lost_to_search_timeout_s: 1.0
+
+  yaw_sign: 1.0
+  pitch_sign: -1.0
+  kp_yaw: 0.85
+  ki_yaw: 0.0
+  kd_yaw: 0.12
+  kp_pitch: 0.75
+  ki_pitch: 0.0
+  kd_pitch: 0.10
+
+  max_gimbal_yaw_rate_deg_s: 60.0
+  max_gimbal_pitch_rate_deg_s: 45.0
+  max_aircraft_yaw_rate_deg_s: 20.0
+  max_horizontal_velocity_m_s: 0.5
+  max_horizontal_accel_m_s2: 0.2
+  max_assist_duration_s: 5.0
+
+  soft_yaw_limit_deg: 250.0
+  soft_pitch_lower_deg: -105.0
+  soft_pitch_upper_deg: 15.0
+  hard_yaw_limit_deg: 300.0
+  hard_pitch_lower_deg: -115.0
+  hard_pitch_upper_deg: 25.0
+
+  acquire_error: 0.20
+  acquire_count: 5
+  search_home_pitch_deg: -20.0
+  search_rotation_time_s: 0.25
+
+  enable_zoom_control: false
+  zoom_control_interval_s: 1.0
+  zoom_target_bbox_height: 0.25
+  zoom_bbox_deadband: 0.08
+  zoom_step_factor: 1.0

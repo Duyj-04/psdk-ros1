@@ -1,0 +1,13 @@
+std_msgs/Header header
+uint8 DISABLED=0
+uint8 ENABLED=1
+uint8 ACTIVE=2
+uint8 HOLD=3
+uint8 TIMEOUT=4
+uint8 EMERGENCY_STOP=5
+uint8 ERROR=6
+uint8 state
+bool control_authority
+bool command_fresh
+string message
+int64 return_code

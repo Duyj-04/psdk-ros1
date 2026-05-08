@@ -1,0 +1,10 @@
+std_msgs/Header header
+float32 x
+float32 y
+float32 z
+float32 yaw
+uint8 horizontal_mode
+uint8 vertical_mode
+uint8 yaw_mode
+uint8 frame
+bool stable_mode

@@ -1,0 +1,55 @@
+psdk_ros1_node:
+  app_name: ""
+  app_id: ""
+  app_key: ""
+  app_license: ""
+  developer_account: ""
+  baudrate: "460800"
+  link_config_file_path: ""
+  alias: "PSDK_ROS1"
+  serial_number: "PSDKROS1000001"
+  firmware_version: [1, 0, 0, 0]
+
+  auto_start_core: true
+  auto_start_modules: true
+  core_init_retries: 1
+
+  # Dangerous commands include motor, takeoff, force landing, storage format,
+  # power output, restore factory settings, delete file and upgrade operations.
+  # Keep false for normal deployments and pass {"safety_confirm":true} per call.
+  allow_dangerous_commands: false
+
+  data_frequency:
+    imu: 50
+    attitude: 50
+    velocity: 50
+    position: 10
+    gps: 5
+    rtk: 5
+    battery: 1
+    hms: 1
+    aircraft_info: 1
+
+  planner:
+    control_rate: 30.0
+    command_timeout: 0.3
+    default_frame: "body"   # body or ground
+    auto_obtain_authority: true
+    release_authority_on_disable: true
+    max_horizontal_velocity: 5.0
+    max_vertical_velocity: 3.0
+    max_yaw_rate: 90.0      # deg/s
+
+  gimbal_feedback:
+    payload_index: 1
+    frequency: 50
+
+  mission:
+    default_cruise_speed: 5.0
+    # Required before converting nav_msgs/Path ENU waypoints into a DJI mission.
+    # reference_latitude: 0.0
+    # reference_longitude: 0.0
+    # reference_altitude: 0.0
+    allow_kmz_file_path_roots:
+      - "/tmp"
+      - "/home"
