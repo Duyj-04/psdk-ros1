@@ -17,3 +17,5 @@ Place `psdk-ros1` and `Payload-SDK-3.13.0` as sibling directories before buildin
 ```bash
 catkin_make
 ```
+
+To override the SDK path, set `-DPSDK_ROOT=/path/to/Payload-SDK-3.13.0` in your CMake invocation.

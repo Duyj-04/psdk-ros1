@@ -5,7 +5,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
 )
 
-set(PSDK_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../Payload-SDK-3.13.0")
+set(PSDK_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../Payload-SDK-3.13.0" CACHE PATH "Path to DJI Payload SDK root")
 set(PSDK_LIB_DIR "${PSDK_ROOT}/build/bin")
 
 if(NOT EXISTS "${PSDK_ROOT}")
