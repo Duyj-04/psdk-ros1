@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>psdk_ros1</name>
+  <version>0.0.1</version>
+  <description>ROS Noetic wrapper for DJI Payload SDK 3.13 built as a single catkin package.</description>
+
+  <maintainer email="maintainers@example.com">psdk_ros1 maintainers</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+
+  <export/>
+</package>
