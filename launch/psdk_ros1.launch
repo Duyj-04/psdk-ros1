@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="psdk_ros1" type="psdk_ros1_node" name="psdk_ros1" output="screen"/>
+</launch>
