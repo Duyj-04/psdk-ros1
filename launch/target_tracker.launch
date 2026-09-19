@@ -1,0 +1,5 @@
+<launch>
+  <arg name="config" default="$(find psdk_ros1)/config/target_tracker.yaml"/>
+  <rosparam file="$(arg config)" command="load"/>
+  <node pkg="psdk_ros1" type="psdk_visual_target_tracker_node" name="psdk_visual_target_tracker_node" output="screen"/>
+</launch>

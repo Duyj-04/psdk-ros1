@@ -1,0 +1,8 @@
+#request
+uint8 payload_index       # see enum E_DjiMountPosition in dji_typedef.h
+
+---
+#response
+bool success
+int32 min_value
+int32 max_value

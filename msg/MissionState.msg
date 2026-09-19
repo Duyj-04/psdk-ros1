@@ -1,0 +1,16 @@
+std_msgs/Header header
+uint8 IDLE=0
+uint8 PATH_READY=1
+uint8 KMZ_READY=2
+uint8 UPLOADING=3
+uint8 READY=4
+uint8 RUNNING=5
+uint8 PAUSED=6
+uint8 STOPPED=7
+uint8 ERROR=8
+uint8 state
+string mission_id
+uint32 waypoint_count
+float32 cruise_speed
+string message
+int64 return_code

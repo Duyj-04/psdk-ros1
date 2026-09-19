@@ -1,0 +1,12 @@
+std_msgs/Header header
+uint8 UPLOAD_PATH=1
+uint8 UPLOAD_KMZ=2
+uint8 START=3
+uint8 PAUSE=4
+uint8 RESUME=5
+uint8 STOP=6
+uint8 SET_CRUISE_SPEED=7
+uint8 CLEAR=8
+uint8 command
+float32 cruise_speed
+string mission_id
